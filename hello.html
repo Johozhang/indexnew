@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+function low(){
+var number = Math.floor(Math.random()*41)-20;
+var result = document.getElementById("msg");
+result.innerHTML = number;
+}
+</script>
+</head>
+<style>
+span{ display:block; font-size:24px; color:red;}
+</style>
+<body>
+<span id="msg">399</span><br/>
+<input type="button" value="点击" onClick="low()">
+</body>
+</html>
