@@ -18,8 +18,21 @@
 		<link rel="stylesheet" type="text/css" href="./index.css"/>
 
 		<script type="text/javascript" src="./jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/scroll.js"></script>
 		<script type="text/javascript" src="./alljs.js"></script>
 		<title>免费量尺设计</title>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.list_lh li:even').addClass('lieven');
+			})
+			$(function(){
+				$("div.list_lh").myScroll({
+					speed:40,
+					rowHeight:68
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div id="contain" class="clearfix">
@@ -30,47 +43,35 @@
 				<p class="sign">当天剩余<br />报名名额</p>
 				<p class="signnum"><span id="msg"></span><span id="msg1"></span></p>
 			</div>
-			
-			<!--报名滚动-->
-			 <!--<script language=javascript >
-        var curIndex=0;
-        //时间间隔 单位毫秒
-        var timeInterval=2000;
-        var arr=new Array();
 
-        arr[0]="images0709/fangmei1.png";
-        arr[1]="images0709/fangmei2.png";
-        arr[2]="images0709/fangmei3.png";
+	<div class="box">
+		<div class="bcon">
+	    	<div class="list_lh">
+    			<ul id="gundong">
+					<li>张**　188****3489　广州佛山</li>
+					<li>赵**　131****7990　广州番禺</li>
+					<li>李**　154****0975　广州番禺</li>
+					<li>张**　133****0990　广州番禺</li>
+					<li>吴**　155****7654　广州番禺</li>
+					<li>钱**　181****3421　广州番禺</li>
+					<li>孙**　188****3131　广州番禺</li>
+					<li>周**　131****8990　广州番禺</li>
+					<li>戎**　134****8790　广州番禺</li>
+					<li>孔**　133****6678　广州番禺</li>
+				</ul>
+    		</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	var ul = document.getElementById("gundong");
+var Lli = ul.getElementsByTagName('li')[10];
 
-        setInterval(changeImg,timeInterval);
-        function changeImg()
-        {
-            var fm=document.getElementById("fm");
+    setInterval(function(){
+        var Fli = ul.getElementsByTagName('li')[0];
+        ul.insertBefore(Fli,Lli);
+}, 4000);
+</script>
 
-            if (curIndex==arr.length-1)
-            {
-                curIndex=0;
-            }
-            else
-            {
-                curIndex+=1;
-            }
-            fm.src=arr[curIndex];
-        }
-    </script>-->
-    
-			<ul id="gundong">
-				<li>张**　188****3489</li>
-				<li>赵**　131****7990</li>
-				<li>李**　154****0975</li>
-				<li>张**　133****0990</li>
-				<li>吴**　155****7654</li>
-				<li>钱**　181****3421</li>
-				<li>孙**　188****3131</li>
-				<li>周**　131****8990</li>
-				<li>戎**　134****8790</li>
-				<li>孔**　133****6678</li>
-			</ul>
 			
 			
 			<div class="input_form">
@@ -82,15 +83,19 @@
 			</div>
 			
 		<!--步骤-->
+		<h3>预约报名后享受以下服务</h3>
 			<ul class="buzhou">
 				<li><img src="./tietu4.jpg" alt="" /></li>
 				<li><img src="./tietu5.jpg" alt="" /></li>
 				<li><img src="./tietu6.jpg" alt="" /></li>
 			</ul>
 			
+			
+			
 		</div>
 		
 		<script type="text/javascript" src="./index.js"></script>
+		
 
 
 <script>

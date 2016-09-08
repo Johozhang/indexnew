@@ -17,6 +17,14 @@ h2 span {
 	color: #f4b931;
 }
 
+h3 {
+	font-size: 2.7rem;
+	font-weight: 600;
+	color: #876005;
+	margin: 40px auto;
+	text-align: center;
+}
+
 .order {
 	color:#fff;
 	background-color: #f4b931;
@@ -35,22 +43,27 @@ h2 span {
 
 .balance {
 	margin:20px auto 0 auto;
-	width: 63%;
+	width: 100%;
 	text-align: center;
 }
 
 .sign {
-	font-size:2.5rem;
+	font-size:2.4rem;
 	font-weight: 800;
 	margin-top: 5px;
-	display: inline-block;
+	margin-left: -100px;
+	position: relative;
+	float: left;
+	left: 50%;
 }
 
 .signnum {
 	text-align: center;
-	font-size: 6rem;
+	font-size: 5rem;
 	color: #ffe431;
-	display: inline-block;
+	position: relative;
+	float: left;
+	left: 50%;
 }
 
 .signnum span{
@@ -90,25 +103,34 @@ h2 span {
 
 #gundong {
 	width: 60%;
-	height: 100px;
+	height: 800px;
 	overflow: hidden;
 	background-color: #E1E1E1;
 	margin: 0 auto;
-	padding: 10px 20px;
 	font-size: 1.5rem;
 	text-align: center;
 	position: relative;
 }
 
 #gundong li {
-	transition: all 3s;
+	transition: all 1s;
 }
 
+.box{ margin:0 auto;}
+.bcon{margin:30px auto;}
+.bcon h1{ border-bottom:1px solid #eee; padding:0 10px;}
+.bcon h1 b{ font:bold 14px/40px '宋体'; border-top:2px solid #3492D1; padding:0 8px; margin-top:-1px; display:inline-block;}
+
+.list_lh{ height:100px; overflow:hidden;}
+.list_lh li{ padding:10px;}
+.list_lh li.lieven{ background:#F0F2F3;}
+
+
 .buzhou {
-	background-color: #E1E1E1;
 	margin-top: 20px;
 }
 
 .buzhou li{
-	margin-top: 10px;
+	width: 90%;
+	margin: 10px auto;
 }
